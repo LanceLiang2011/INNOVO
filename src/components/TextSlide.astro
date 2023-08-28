@@ -1,0 +1,12 @@
+---
+const {valueList} = Astro.props;
+---
+
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-16 overflow-hidden rounded-lg md:h-36">
+        {valueList.map(value => (<div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <h1 class=" text-center text-6xl md:text-7xl lg:text-8xl drop-shadow-lg font-extrabold text-white">{value}</h1>
+        </div>) )}
+    </div>
+</div>
