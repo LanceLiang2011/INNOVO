@@ -1,14 +1,22 @@
 ---
-import AboutUs from "@/components/Home/AboutUs.astro";
-import WhyChooseUs from "@/components/Home/WhyChooseUs.astro";
-import Team from "@/components/Team.astro";
+import AboutHeading from "@/components/About/AboutHeading.astro"
+import WhatWeDo from "@/components/About/WhatWeDo.astro";
+import WhyThisMatters from "@/components/About/WhyThisMatters.astro"
+import ByTheNumbers from "@/components/About/ByTheNumbers.astro"
 import Layout from "@/layouts/Layout.astro";
+import WhoWeAre from "@/components/About/WhoWeAre.astro"
+import Team from "@/components/Team.astro";
+import MissionVision from "@/components/About/MissionVision.astro"
 ---
 
 <Layout title="Innovo | About page">
-  <div class="mt-44">
-    <AboutUs /> 
-    <WhyChooseUs />
+  <div>
+    <AboutHeading />
+    <WhatWeDo />
+    <WhyThisMatters />
+    <ByTheNumbers />
+    <WhoWeAre />
     <Team />
+    <MissionVision />
   </div>
 </Layout>
