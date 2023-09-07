@@ -1,17 +1,25 @@
 ---
 const year = new Date().getFullYear();
+import logo from "/Innovo_logo.svg";
+import ContactInfo from "@/components/ContactInfo.astro";
 ---
 
-<footer class="bg-white rounded-sm shadow m-4 dark:bg-gray-800">
+<footer class="w-full px-6 bg-gray-800 text-gray-50">
   <div
-    class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+    class="w-full mx-auto max-w-screen-xl py-16 md:flex md:items-center md:justify-between"
   >
-    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-      >&copy; {year}
-      <a href="/" class="hover:underline">Innovo</a>. All Rights Reserved.
-    </span>
+  <a href="/" class="flex items-center">
+    <img class="w-44 invert" src={logo} alt="logo of Innovo" />
+  </a>
+  <div class="flex flex-col gap-4 md:gap-8">
+    <ContactInfo />
+    <span class="text-sm text-gray-200 sm:text-center"
+    >&copy; {year}
+    <a href="/" class="hover:underline">Innovo</a>. All Rights Reserved.
+  </span>
+  </div>
     <ul
-      class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+      class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-200 sm:mt-0"
     >
       <li>
         <a href="#" class="mr-4 hover:underline md:mr-6">About</a>

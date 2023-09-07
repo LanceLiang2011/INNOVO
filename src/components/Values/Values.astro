@@ -2,20 +2,24 @@
 import ValueCard from "./ValueCard.astro";
 import { Icon } from "astro-icon";
 ---
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-12 gap-2 md:gap-4 lg:gap-6">
-    <ValueCard value="Collaboration" content="We co-create our recommendations with our clients while factoring in the voices of patients, clinicians, and all other stakeholders." >
-        <Icon class="text-primary-2 hover:text-secondary-blue-pale" name="fluent:people-team-20-filled"/>
-    </ValueCard>
-    <ValueCard value="Impartiality" content="We ensure to put aside pre-conceived assumptions to extract fresh insights from the data and make unbiased recommendations." >
-        <Icon class="text-primary-2 hover:text-secondary-blue-pale" name="codicon:law"/>
-    </ValueCard>
-    <ValueCard value="Integrity" content="We are committed to being fair and honest in all our words, actions, and recommendations. We ensure that everything we do complies with the highest ethical and moral standards." >
-        <Icon class="text-primary-2 hover:text-secondary-blue-pale" name="ph:heart-fill"/>
-    </ValueCard>
-    <ValueCard value="Imaginative" content="We have a team of creative minds that can overcome challenges with unique and unprecedented approaches." >
-        <Icon class="text-primary-2 hover:text-secondary-blue-pale" name="brain" />
-    </ValueCard>
-    <ValueCard value="Patient-centred" content="We always keep the patients at the center of everything we do. Our end goal is to help patients achieve a higher quality of life. " >
-        <Icon class="text-primary-2 hover:text-secondary-blue-pale" name="medical-icon:i-care-staff-area"/>
-    </ValueCard>
+<div class=" bg-gray-100 text-center py-24 px-12 md:px-24 lg:px-40">
+    <h3 class=" mb-6 font-bold text-sm md:text-base lg:text-lg text-secondary-blue-pale">INNOVO's Values</h3>
+    <h4 class=" mb-10 font-semibold text-xl md:text-2xl lg:text-3xl text-primary-1">What it's like to work with us</h4>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-12 gap-2 md:gap-4 lg:gap-6">
+        <ValueCard value="Collaboration" content="We co-create our recommendations with our clients while factoring in the voices of patients, clinicians, and all other stakeholders." >
+            <Icon class="text-primary-1 hover:text-secondary-blue-pale" name="tabler:puzzle-2"/>
+        </ValueCard>
+        <ValueCard value="Impartiality" content="We ensure to put aside pre-conceived assumptions to extract fresh insights from the data and make unbiased recommendations." >
+            <Icon class="text-primary-2 hover:text-secondary-blue-pale" name="codicon:law"/>
+        </ValueCard>
+        <ValueCard value="Integrity" content="We are committed to being fair and honest in all our words, actions, and recommendations. We ensure that everything we do complies with the highest ethical and moral standards." >
+            <Icon class="text-primary-2 hover:text-secondary-blue-pale" name="octicon:checklist-16"/>
+        </ValueCard>
+        <ValueCard value="Imaginative" content="We have a team of creative minds that can overcome challenges with unique and unprecedented approaches." >
+            <Icon class="text-primary-2 hover:text-secondary-blue-pale" name="brain" />
+        </ValueCard>
+        <ValueCard value="Patient-centred" content="We always keep the patients at the center of everything we do. Our end goal is to help patients achieve a higher quality of life. " >
+            <Icon class="text-primary-2 hover:text-secondary-blue-pale" name="mdi:account-reactivate"/>
+        </ValueCard>
+    </div>
 </div>
