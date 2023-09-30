@@ -26,3 +26,33 @@ import ContactInfo from "@/components/ContactInfo.astro";
   <ContactInfo c="text-black" />
 
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector("form");
+
+    form?.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const nameInput = document.getElementById("name") as HTMLInputElement;
+        const emailInput = document.getElementById("email") as HTMLInputElement;
+
+        // Check if the inputs are not null
+        if (!nameInput || !emailInput) {
+            console.error("Cannot find input elements!");
+            return;
+        }
+
+        const name = nameInput.value;
+        const email = emailInput.value;
+        const targetEmail = "info@innovolabsconsulting.ca";
+
+        // Construct the mailto link
+        const mailtoLink = `mailto:${targetEmail}?subject=Message from ${email}&body=Name: ${name}`;
+
+        // Open the default mail client
+        window.location.href = mailtoLink;
+    });
+});
+
+</script>
