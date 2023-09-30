@@ -23,8 +23,8 @@ module.exports = {
         "hero-image": "url('/hero.png')",
         "about-image": "url('/aboutheading.jpeg')",
         "service-image": "url('/serviceheading.png')",
-        "resources-image": "url('/insight.jpg')",
-        
+        "resources-image": "url('/toronto.jpeg')",
+
       },
     },
   },
