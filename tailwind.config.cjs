@@ -21,9 +21,9 @@ module.exports = {
       },
       backgroundImage: {
         "hero-image": "url('/hero.png')",
-        "about-image": "url('/aboutheading.jpeg')",
+        "about-image": "url('/toronto.jpeg')",
         "service-image": "url('/serviceheading.png')",
-        "resources-image": "url('/toronto.jpeg')",
+        "resources-image": "url('/light.jpg')",
 
       },
     },
